@@ -5,7 +5,7 @@ TOKEN = "7232868612:AAEE686letBrsPMdJ28S1QJv51MXY2B5lNc"  # Example: "123456789:
 
 # Initialize bot
 bot = telebot.TeleBot(TOKEN)
-
+bot.remove_webhook()
 # /start command handler
 @bot.message_handler(commands=['start'])
 def send_start_message(message):
